@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ServiceDeligates.DI;
+using static ServiceDeligates.Enum;
 
 namespace ServiceDeligates.Controllers
 {
@@ -6,17 +8,17 @@ namespace ServiceDeligates.Controllers
     [ApiController]
     public class SMSController : ControllerBase
     {
-        private readonly ReminderServiceDelegate reminderService;
+        private readonly IReminderServiceFactory _reminderServiceFactory;
 
-        public SMSController(ReminderServiceDelegate reminderService)
+        public SMSController(IReminderServiceFactory reminderServiceFactory)
         {
-            this.reminderService = reminderService;
+            _reminderServiceFactory = reminderServiceFactory;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var service = reminderService.Invoke(NotificationTypes.Sms);
+            var service = _reminderServiceFactory.GetInstance(NotificationTypes.SMS);
             service.SendReminder();
             return Ok();
         }

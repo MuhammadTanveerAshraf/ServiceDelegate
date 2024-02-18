@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Practice\\ServiceDeligates\\ServiceDeligates\\ServiceDeligates.csproj": {}
+    "D:\\Practice\\ServiceDelegate\\ServiceDeligates\\ServiceDeligates.csproj": {}
   },
   "projects": {
-    "D:\\Practice\\ServiceDeligates\\ServiceDeligates\\ServiceDeligates.csproj": {
+    "D:\\Practice\\ServiceDelegate\\ServiceDeligates\\ServiceDeligates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Practice\\ServiceDeligates\\ServiceDeligates\\ServiceDeligates.csproj",
+        "projectUniqueName": "D:\\Practice\\ServiceDelegate\\ServiceDeligates\\ServiceDeligates.csproj",
         "projectName": "ServiceDeligates",
-        "projectPath": "D:\\Practice\\ServiceDeligates\\ServiceDeligates\\ServiceDeligates.csproj",
+        "projectPath": "D:\\Practice\\ServiceDelegate\\ServiceDeligates\\ServiceDeligates.csproj",
         "packagesPath": "C:\\Users\\M Tanveer Ashraf\\.nuget\\packages\\",
-        "outputPath": "D:\\Practice\\ServiceDeligates\\ServiceDeligates\\obj\\",
+        "outputPath": "D:\\Practice\\ServiceDelegate\\ServiceDeligates\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\M Tanveer Ashraf\\AppData\\Roaming\\NuGet\\NuGet.Config",

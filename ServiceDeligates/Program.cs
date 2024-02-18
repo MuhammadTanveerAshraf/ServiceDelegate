@@ -11,7 +11,8 @@ services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-DependencyRegistration.RegisterDependencies(services);
+ServiceCollectionsWithDelegates.RegisterDependencies(services);
+ServiceCollectionWithFactoryPattern.RegisterDependencies(services);
 
 var app = builder.Build();
 

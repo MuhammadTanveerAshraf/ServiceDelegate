@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static ServiceDeligates.Enum;
 
 namespace ServiceDeligates.Controllers
 {
@@ -7,9 +8,9 @@ namespace ServiceDeligates.Controllers
     [ApiController]
     public class EmailController : ControllerBase
     {
-        private readonly ReminderServiceDelegate reminderService;
+        private readonly ReminderServiceResolver reminderService;
 
-        public EmailController(ReminderServiceDelegate reminderService)
+        public EmailController(ReminderServiceResolver reminderService)
         {
             this.reminderService = reminderService;
         }
